@@ -7,7 +7,7 @@ This guide walks you through setting up a non-root `zsh` with `oh-my-zsh`, switc
 
 ---
 
-## âš™ï¸ 1. Install Zsh from Source (Non-Root)
+## 1. Install Zsh from Source (Non-Root)
 
 ```bash
 mkdir -p ~/apps
@@ -35,7 +35,7 @@ make -j4 && make install
 
 ---
 
-## ğŸŒ€ 2. Create Zsh Launch Wrapper
+## ğ2. Create Zsh Launch Wrapper
 
 `~/apps/zsh-launch.sh`
 
@@ -47,7 +47,7 @@ chmod +x ~/apps/zsh-launch.sh
 
 ---
 
-## ğŸ§  3. Make Zsh Your Default (Non-root Way)
+## ğ3. Make Zsh Your Default (Non-root Way)
 
 In `~/.bash_profile` (or `~/.bashrc`):
 
@@ -59,7 +59,7 @@ fi
 
 ---
 
-## ğŸ’… 4. Install Oh My Zsh (manually)
+## ğ4. Install Oh My Zsh (manually)
 
 After launching Zsh:
 
@@ -68,7 +68,7 @@ $ ~/apps/zsh-launch.sh
 ```
 
 
-## ğŸŒ 5. Create Proxy Environment Scripts
+##  5. Create Proxy Environment Scripts
 
 Create two files in `~/exports/`:
 
@@ -76,7 +76,7 @@ Create two files in `~/exports/`:
 **exports_research.sh**
 
 
-## ğŸ› ï¸ 6. Define Environment Switcher Functions
+## ğ6. Define Environment Switcher Functions
 
 Add this to the bottom of your `~/.zshrc`:
 
@@ -126,7 +126,7 @@ source ~/.zshrc
 
 ---
 
-## ğŸš€ 7. Using It
+## ğ7. Using It
 
 ### Switch to MSR mode:
 
