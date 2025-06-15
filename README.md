@@ -1,11 +1,8 @@
 
 ---
 
-# ðŸ§ª IITD ZSH Proxy Environment Setup
+# IITD ZSH Proxy Environment Setup
 
-This guide walks you through setting up a non-root `zsh` with `oh-my-zsh`, switching between **MSR** and **Research** environments, and launching corresponding proxies automatically.
-
----
 
 ## 1. Install Zsh from Source (Non-Root)
 
@@ -35,7 +32,7 @@ make -j4 && make install
 
 ---
 
-## ð2. Create Zsh Launch Wrapper
+## 2. Zsh Launch Wrapper
 
 `~/apps/zsh-launch.sh`
 
@@ -47,7 +44,7 @@ chmod +x ~/apps/zsh-launch.sh
 
 ---
 
-## ð3. Make Zsh Your Default (Non-root Way)
+## 3. Make Zsh Your Default (Non-root Way)
 
 In `~/.bash_profile` (or `~/.bashrc`):
 
@@ -59,7 +56,7 @@ fi
 
 ---
 
-## ð4. Install Oh My Zsh (manually)
+## 4. Install Oh My Zsh (manually)
 
 After launching Zsh:
 
@@ -68,7 +65,7 @@ $ ~/apps/zsh-launch.sh
 ```
 
 
-##  5. Create Proxy Environment Scripts
+## 5. Create Proxy Environment Scripts
 
 Create two files in `~/exports/`:
 
@@ -76,7 +73,7 @@ Create two files in `~/exports/`:
 **exports_research.sh**
 
 
-## ð6. Define Environment Switcher Functions
+## 6. Define Environment Switcher Functions
 
 Add this to the bottom of your `~/.zshrc`:
 
@@ -126,7 +123,7 @@ source ~/.zshrc
 
 ---
 
-## ð7. Using It
+## 7. Using It
 
 ### Switch to MSR mode:
 
@@ -139,4 +136,3 @@ emsr
 ```bash
 eres
 ```
-
